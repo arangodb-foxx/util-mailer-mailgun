@@ -1,0 +1,35 @@
+{
+  "name": "mailer-mailgun",
+  "author": "Alan Plum",
+  "version": "0.1",
+  "description": "Mailer task for Foxx using Mailgun.",
+
+  "exports": {
+    "mailer": "mailer.js"
+  },
+
+  "defaultDocument": "",
+
+  "lib": ".",
+
+  "configuration": {
+    "apiKey": {
+      "description": "Your Mailgun API key.",
+      "type": "string"
+    },
+    "domain": {
+      "description": "Your Mailgun domain.",
+      "type": "string"
+    },
+    "jobType": {
+      "description": "Name of the job type to register.",
+      "type": "string",
+      "default": "mailer.mailgun"
+    },
+    "maxFailures": {
+      "description": "Maximum number of times to retry a job if it fails.",
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
