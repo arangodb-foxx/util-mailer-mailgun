@@ -7,8 +7,8 @@ var _ = require('underscore'),
 
 function attachmentPart(boundary, attachment, name) {
   return _mimePart(boundary, attachment.content, [
-    'Content-Disposition: form-data; name="' + name + '"; filename="' + attachment.filename + '"',
-    'Content-Type: ' + (attachment.contentType || 'application/octet-stream'),
+    'Content-Disposition: form-data; name="' + name + '"; filename="' + attachment.name + '"',
+    'Content-Type: ' + (attachment.type || 'application/octet-stream'),
     'Content-Transfer-Encoding: base64'
   ]);
 }

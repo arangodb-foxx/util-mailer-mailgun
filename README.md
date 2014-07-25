@@ -43,8 +43,8 @@ You can specify an option multiple times by passing an array as the option's val
 If you want to send attachments, you need to pass them as objects with the following properties:
 
 * *content*: the attachment's base64-encoded content.
-* *filename*: the filename of the attachment that will be used in the e-mail.
-* *contentType* (optional): the attachment's MIME type. Default: *application/octet-stream*
+* *name*: the name of the attachment that will be used in the e-mail.
+* *type* (optional): the attachment's MIME type. Default: *application/octet-stream*
 
 *Examples*
 
@@ -53,8 +53,8 @@ queue.push('mailer.mailgun', {
     // ...
     attachment: {
         content: 'SGVsbG8gV29ybGQh',
-        filename: 'hello_world.txt',
-        contentType: 'text/plain'
+        name: 'hello_world.txt',
+        type: 'text/plain'
     }
 });
 ```

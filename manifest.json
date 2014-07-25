@@ -2,7 +2,7 @@
   "name": "mailer-mailgun",
   "author": "Alan Plum",
   "version": "0.1",
-  "description": "Mailer task for Foxx using Mailgun.",
+  "description": "Mailer job type for Foxx using Mailgun.",
 
   "exports": {
     "mailer": "mailer.js"
