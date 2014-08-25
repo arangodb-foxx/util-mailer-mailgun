@@ -66,6 +66,7 @@ queues.registerJobType(applicationContext.configuration.jobType, {
           body.message
         );
       }
+      return body;
     } else if (Math.floor(response.code / 100) !== 2) {
       throw new Error('Server sent an empty response with status ' + response.code);
     }
