@@ -1,8 +1,21 @@
 {
   "name": "mailer-mailgun",
-  "author": "Alan Plum",
-  "version": "1.0.0",
   "description": "Mailer job type for Foxx using Mailgun.",
+  "author": "ArangoDB GmbH",
+  "version": "1.0.0",
+  "license": "Apache License, Version 2.0",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arangodb/foxx-mailer-mailgun.git"
+  },
+
+  "contributors": [
+    {
+      "name": "Alan Plum",
+      "email": "me@pluma.io"
+    }
+  ],
 
   "exports": {
     "mailer": "mailer.js"
