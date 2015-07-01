@@ -2,29 +2,22 @@
   "name": "mailer-mailgun",
   "description": "Mailer job type for Foxx using Mailgun.",
   "author": "ArangoDB GmbH",
-  "version": "1.0.0",
+  "version": "2.0.0-dev",
   "license": "Apache License, Version 2.0",
-
   "repository": {
     "type": "git",
     "url": "https://github.com/arangodb/foxx-mailer-mailgun.git"
   },
-
   "contributors": [
     {
       "name": "Alan Plum",
       "email": "me@pluma.io"
     }
   ],
-
-  "exports": {
+  "exports": "exports.js",
+  "scripts": {
     "mailer": "mailer.js"
   },
-
-  "defaultDocument": "",
-
-  "lib": ".",
-
   "configuration": {
     "apiKey": {
       "description": "Your Mailgun API key.",
@@ -33,11 +26,6 @@
     "domain": {
       "description": "Your Mailgun domain.",
       "type": "string"
-    },
-    "jobType": {
-      "description": "Name of the job type to register.",
-      "type": "string",
-      "default": "mailer.mailgun"
     },
     "maxFailures": {
       "description": "Maximum number of times to retry a job if it fails.",
