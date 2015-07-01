@@ -13,7 +13,7 @@ if (data.error) {
 
 var payload = multipartMime(data.value);
 var response = request.post('https://api.mailgun.net/v2/' + domain + '/messages', {
-  body: payload.data,
+  body: payload.payload,
   headers: {
     'accept': 'application/json',
     'content-type': 'multipart/form-data; boundary=' + payload.boundary,

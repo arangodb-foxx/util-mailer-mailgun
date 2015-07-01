@@ -1,6 +1,5 @@
 /*global require, module, applicationContext */
 'use strict';
-
 var map = require('underscore').map;
 var crypto = require('crypto');
 var NL = '\r\n';
