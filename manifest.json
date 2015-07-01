@@ -2,7 +2,7 @@
   "name": "mailer-mailgun",
   "description": "Mailer job type for Foxx using Mailgun.",
   "author": "ArangoDB GmbH",
-  "version": "2.0.0-dev",
+  "version": "2.0.0",
   "license": "Apache License, Version 2.0",
   "repository": {
     "type": "git",
