@@ -1,4 +1,4 @@
-/*global require, module, applicationContext */
+/*global require, module, applicationContext, Buffer */
 'use strict';
 var apiKey = applicationContext.configuration.apiKey;
 var domain = applicationContext.configuration.domain;
