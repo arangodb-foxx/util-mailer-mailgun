@@ -1,7 +1,7 @@
 /*global require, module, applicationContext */
 'use strict';
 var map = require('underscore').map;
-var crypto = require('crypto');
+var crypto = require('org/arangodb/crypto');
 var NL = '\r\n';
 
 function attachmentPart(boundary, attachment, name) {
